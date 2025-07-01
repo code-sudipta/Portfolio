@@ -1,0 +1,107 @@
+.p-button {
+  background-color: orange;
+  padding: 10px 15px;
+  border-radius: 4rem;
+  display: flex;
+  gap: 0.8rem;
+}
+.hollow-text {
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+  font-weight: 900;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #ff6b35, #f7931e, #ffd23f);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 3s ease infinite;
+  font-weight: 900;
+}
+
+.p-toast-message{
+  width: fit-content;
+}
+
+.p-toast-message-content{
+  padding: 10px 15px;
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+}
+
+.p-toast-message-icon{
+  margin-right: 1rem;
+}
+
+.p-toast-icon-close-icon{
+  margin-left: 1rem;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.p-accordion-toggle-icon{
+  margin-left: 1rem;
+}
+
+.p-timeline-event-connector{
+  margin-top: .6rem;
+}
+
+
+@keyframes rise {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes set {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-rise {
+  animation: rise 0.5s ease-out;
+}
+
+.animate-set {
+  animation: set 0.5s ease-out;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: orange;
+}
