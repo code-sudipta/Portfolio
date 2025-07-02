@@ -145,6 +145,7 @@ const Header = () => {
     document.getElementById(
       "theme-link"
     ).href = `https://unpkg.com/primereact@10.9.6/resources/themes/arya-orange/theme.css`;
+    console.log(document.getElementById("custom-theme"));
     document.getElementById("custom-theme").href = "./src/themes/darkTheme.css";
   }
 
