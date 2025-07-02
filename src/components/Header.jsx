@@ -1,6 +1,7 @@
 import { Button } from "primereact/button";
 import { useEffect, useState, useRef } from "react";
 import * as motion from "motion/react-client";
+import namelogo from "../assets/namelogo.png";
 
 const Header = () => {
   const [darkTheme, setDarkTheme] = useState(
@@ -127,15 +128,13 @@ const Header = () => {
       document.getElementById(
         "theme-link"
       ).href = `https://unpkg.com/primereact@10.9.6/resources/themes/arya-orange/theme.css`;
-      document.getElementById("custom-theme").href =
-        "/themes/darkTheme.css";
+      document.getElementById("custom-theme").href = "/themes/darkTheme.css";
       localStorage.setItem("theme", "dark");
     } else {
       document.getElementById(
         "theme-link"
       ).href = `https://unpkg.com/primereact@10.9.6/resources/themes/saga-orange/theme.css`;
-      document.getElementById("custom-theme").href =
-        "/themes/lightTheme.css";
+      document.getElementById("custom-theme").href = "/themes/lightTheme.css";
       localStorage.setItem("theme", "light");
     }
     setDarkTheme(!darkTheme);
@@ -185,11 +184,13 @@ const Header = () => {
         animate="visible"
       >
         {/* Logo */}
-        <motion.i
-          className="pi pi-user text-xl"
+        <motion.img
+          src={namelogo}
+          alt="Logo"
           variants={logoVariants}
-          whileHover={{ scale: 1.2, rotate: 10 }}
+          whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
+          className="w-12 h-12 cursor-pointer rounded-full bg-white"
         />
 
         {/* Desktop Navigation */}
@@ -288,27 +289,12 @@ const Header = () => {
 
       {/* Mobile Sidebar */}
       <motion.div
-        className="fixed top-0 right-0 h-full w-70 bg-[var(--header-bg-color)] shadow-lg z-40 md:hidden"
+        className="fixed top-20 right-0 h-full w-70 bg-[var(--header-bg-color)] shadow-lg z-40 md:hidden"
         initial={false}
         animate={sidebarOpen ? "open" : "closed"}
         variants={sidebarVariants}
         ref={containerRef}
       >
-        {/* Sidebar Header */}
-        <motion.div
-          className="flex justify-end items-center p-6 bg-transparent"
-          variants={itemVariants}
-        >
-          <motion.button
-            onClick={closeSidebar}
-            className="text-2xl cursor-pointer"
-            aria-label="Close menu"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <i className="pi pi-times"></i>
-          </motion.button>
-        </motion.div>
 
         {/* Sidebar Navigation */}
         <nav className="p-6">
@@ -354,7 +340,10 @@ const Header = () => {
               />
             </motion.div>
 
-            <a href="https://drive.google.com/file/d/1mCpvJrG-Pbz6o-8LeOzSqquwtBsdD_tZ/view?usp=drive_link" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/1mCpvJrG-Pbz6o-8LeOzSqquwtBsdD_tZ/view?usp=drive_link"
+              target="_blank"
+            >
               <motion.div
                 variants={buttonVariants}
                 whileHover="hover"

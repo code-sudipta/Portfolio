@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Accordion, AccordionTab } from "primereact/accordion";
 import { Avatar } from "primereact/avatar";
-import { Badge } from "primereact/badge";
 import { motion } from "motion/react";
 import experience from "../assets/experience.svg";
 
@@ -112,14 +111,12 @@ const Experience = () => {
             {[
               {
                 name: "Inceptial Infrastructure and Technology LLP",
-                img: "https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png",
                 position: "Developer Intern",
                 content:
                   "At Inceptial Infrastructure and Technology LLP, I was a Developer Intern, where I learned to make REST API. Conceptualized and pioneered the internal Asset Management Portal utilizing REST APIs, streamlining asset tracking for 50+ employees, and reducing asset retrieval time by 40% during peak periods. Designed and implemented the internal Ticket Management System UI.",
               },
               {
                 name: "Cincooni Systems Private Limited",
-                img: "https://primefaces.org/cdn/primereact/images/avatar/onyamalimba.png",
                 position: "Growth Executive Intern",
                 content:
                   "At Cincooni Systems Private Limited, I was a Growth Executive Intern, where I played a pivotal role in lead generation and raised Fund for a non-profit organization.",
@@ -129,23 +126,19 @@ const Experience = () => {
                 key={i}
                 header={
                   <div className="flex items-center gap-3 px-4 py-4 rounded-lg w-full">
-                    <Avatar
-                      image={item.img}
-                      shape="circle"
-                      className="w-10 h-10 flex-shrink-0 shadow-md"
-                    />
-                    <div className="flex flex-col items-start flex-grow min-w-0">
-                      <span className="font-semibold text-base truncate w-full">
+                    <i className="pi pi-building text-md lg:text-lg"></i>
+                    <div className="flex flex-col items-start flex-grow min-w-0 ml-2">
+                      <span className="text-sm lg:text-base font-semibold truncate w-full">
                         {item.name}
                       </span>
-                      <span className="text-sm truncate w-full leading-relaxed">
+                      <span className="text-xs lg:text-sm truncate font-medium w-full leading-relaxed">
                         {item.position}
                       </span>
                     </div>
                     <p></p>
                   </div>
                 }
-                className="w-full shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden mb-3"
+                className="w-full shadow-lg transition-all duration-300 rounded-xl overflow-hidden mb-3"
               >
                 <p className="w-full px-4 py-4 text-sm leading-relaxed">
                   {item.content}

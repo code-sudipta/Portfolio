@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import namelogo from "../assets/namelogo.png";
 
 const Footer = () => {
   // Animation variants
@@ -86,11 +87,13 @@ const Footer = () => {
         className="font-bold text-xl sm:text-2xl flex gap-2 sm:gap-4 items-center mb-2 sm:mb-0"
         variants={logoVariants}
       >
-        <motion.i
-          className="pi pi-user cursor-pointer"
-          variants={iconVariants}
-          whileHover="hover"
-          whileTap="tap"
+        <motion.img
+          src={namelogo}
+          alt="Logo"
+          variants={logoVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-12 h-12 cursor-pointer rounded-full bg-white"
         />
         <motion.span
           whileHover={{

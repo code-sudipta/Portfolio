@@ -48,7 +48,7 @@
 }
 
 .p-accordion-toggle-icon{
-  margin-left: 1rem;
+  display: none;
 }
 
 .p-timeline-event-connector{
