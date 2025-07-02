@@ -82,47 +82,6 @@ const Footer = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
-      {/* Floating background elements */}
-      <motion.div
-        className="absolute top-2 left-8 w-3 h-3 bg-orange-400 rounded-full opacity-20"
-        animate={{
-          y: [0, -10, 0],
-          x: [0, 5, 0],
-          scale: [1, 1.2, 1],
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-      <motion.div
-        className="absolute bottom-2 right-12 w-2 h-2 bg-blue-400 rounded-full opacity-25"
-        animate={{
-          y: [0, 8, 0],
-          rotate: [0, 180, 0],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2,
-        }}
-      />
-      <motion.div
-        className="absolute top-1/2 right-1/4 w-4 h-4 bg-purple-400 rounded-2xl opacity-15"
-        animate={{
-          rotate: [0, 360],
-          scale: [1, 1.1, 1],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "linear",
-          delay: 1,
-        }}
-      />
-
       <motion.h1
         className="font-bold text-xl sm:text-2xl flex gap-2 sm:gap-4 items-center mb-2 sm:mb-0"
         variants={logoVariants}

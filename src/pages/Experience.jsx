@@ -89,180 +89,6 @@ const Experience = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
-      {/* Floating elements for background effect */}
-      <motion.div
-        className="absolute top-20 left-10 w-4 h-4 bg-orange-500 rounded-full opacity-20"
-        animate={{
-          y: [0, -20, 0],
-          x: [0, 10, 0],
-          scale: [1, 1.2, 1],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-      <motion.div
-        className="absolute bottom-32 right-20 w-6 h-6 bg-blue-500 rounded-full opacity-15"
-        animate={{
-          y: [0, 15, 0],
-          x: [0, -15, 0],
-          scale: [1, 0.8, 1],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2,
-        }}
-      />
-      <motion.div
-        className="absolute top-1/2 right-10 w-3 h-3 bg-green-500 rounded-full opacity-25"
-        animate={{
-          y: [0, -25, 0],
-          rotate: [0, 360],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "linear",
-          delay: 4,
-        }}
-      />
-      <motion.div
-        className="absolute top-10 right-32 w-5 h-5 bg-purple-400 rounded-full opacity-20"
-        animate={{
-          y: [0, -18, 0],
-          x: [0, 12, 0],
-          scale: [1, 1.1, 1],
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1,
-        }}
-      />
-
-      <motion.div
-        className="absolute bottom-10 left-16 w-4 h-4 bg-pink-500 rounded-full opacity-25"
-        animate={{
-          y: [0, 20, 0],
-          x: [0, -10, 0],
-          rotate: [0, 180, 0],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 3,
-        }}
-      />
-
-      <motion.div
-        className="absolute top-1/4 left-1/3 w-3 h-3 bg-yellow-400 rounded-full opacity-30"
-        animate={{
-          y: [0, -15, 0],
-          x: [0, 15, 0],
-          scale: [1, 1.3, 1],
-        }}
-        transition={{
-          duration: 9,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2,
-        }}
-      />
-
-      <motion.div
-        className="absolute bottom-1/4 right-1/3 w-6 h-6 bg-cyan-400 rounded-full opacity-20"
-        animate={{
-          y: [0, -30, 0],
-          rotate: [0, 360],
-        }}
-        transition={{
-          duration: 12,
-          repeat: Infinity,
-          ease: "linear",
-          delay: 5,
-        }}
-      />
-
-      <motion.div
-        className="absolute top-[70%] left-1/4 w-2 h-2 bg-red-400 rounded-full opacity-15"
-        animate={{
-          y: [0, 10, 0],
-          x: [0, 10, 0],
-          scale: [1, 1.1, 1],
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1,
-        }}
-      />
-      {/* Circle */}
-      <motion.div
-        className="absolute top-8 left-8 w-4 h-4 bg-pink-500 rounded-full opacity-25"
-        animate={{ y: [0, -15, 0], x: [0, 10, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-      />
-
-      {/* Square */}
-      <motion.div
-        className="absolute top-1/2 left-1/4 w-5 h-5 bg-yellow-400 rounded-2xl opacity-20"
-        animate={{ rotate: [0, 360], scale: [1, 1.2, 1] }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "linear",
-          delay: 1,
-        }}
-      />
-
-      {/* Triangle using clip-path */}
-      <motion.div
-        className="absolute bottom-24 right-16 w-6 h-6 bg-green-500 opacity-20"
-        style={{
-          clipPath: "polygon(50% 0%, 0% 100%, 100% 100%)",
-        }}
-        animate={{ y: [0, 20, 0], x: [0, -10, 0] }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 2,
-        }}
-      />
-
-      {/* Blob (random shape) */}
-      <motion.div
-        className="absolute top-1/3 right-1/4 w-10 h-10 bg-purple-400 opacity-15"
-        style={{
-          borderRadius: "40% 60% 55% 45% / 60% 40% 60% 40%",
-        }}
-        animate={{ scale: [1, 1.1, 1], rotate: [0, 360] }}
-        transition={{
-          duration: 12,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 3,
-        }}
-      />
-
-      {/* Oval */}
-      <motion.div
-        className="absolute bottom-12 left-20 w-10 h-5 bg-blue-400 rounded-full opacity-20"
-        animate={{ x: [0, 20, 0], y: [0, -10, 0] }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1,
-        }}
-      />
       <div className="h-10 md:h-20"></div>
       <motion.h1
         className="text-3xl md:text-4xl mb-5 w-fit text-center"
@@ -285,31 +111,18 @@ const Experience = () => {
           >
             {[
               {
-                name: "Amy Elsner",
+                name: "Inceptial Infrastructure and Technology LLP",
                 img: "https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png",
-                badge: 3,
-                position: "Senior Software Engineer",
-                company: "Google",
+                position: "Developer Intern",
                 content:
-                  "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.",
+                  "At Inceptial Infrastructure and Technology LLP, I was a Developer Intern, where I learned to make REST API. Conceptualized and pioneered the internal Asset Management Portal utilizing REST APIs, streamlining asset tracking for 50+ employees, and reducing asset retrieval time by 40% during peak periods. Designed and implemented the internal Ticket Management System UI.",
               },
               {
-                name: "Onyama Limba",
+                name: "Cincooni Systems Private Limited",
                 img: "https://primefaces.org/cdn/primereact/images/avatar/onyamalimba.png",
-                badge: 4,
-                position: "Software Engineer",
-                company: "YouTube",
+                position: "Growth Executive Intern",
                 content:
-                  "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
-              },
-              {
-                name: "Ioni Bowcher",
-                img: "https://primefaces.org/cdn/primereact/images/avatar/ionibowcher.png",
-                badge: 2,
-                position: "Software Architect",
-                company: "Apple",
-                content:
-                  "During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.",
+                  "At Cincooni Systems Private Limited, I was a Growth Executive Intern, where I played a pivotal role in lead generation and raised Fund for a non-profit organization.",
               },
             ].map((item, i) => (
               <AccordionTab
@@ -326,13 +139,10 @@ const Experience = () => {
                         {item.name}
                       </span>
                       <span className="text-sm truncate w-full leading-relaxed">
-                        {item.position} at {item.company}
+                        {item.position}
                       </span>
                     </div>
-                    <Badge
-                      value={item.badge}
-                      className="ml-auto rounded-full shadow-sm"
-                    />
+                    <p></p>
                   </div>
                 }
                 className="w-full shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl overflow-hidden mb-3"

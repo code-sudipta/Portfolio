@@ -7,12 +7,14 @@ import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import FloatingBackground from "./components/FloatingBackground";
 import { motion,useScroll } from "motion/react";
 
 function App() {
   const { scrollYProgress } = useScroll()
   return (
     <>
+      <FloatingBackground />
       <motion.div
         id="scroll-indicator"
         style={{
