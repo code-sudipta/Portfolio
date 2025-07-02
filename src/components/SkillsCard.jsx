@@ -1,7 +1,6 @@
 import { Card } from "primereact/card";
 
 const SkillsCard = (props) => {
-  console.log(props);
   return (
     <>
       <div className="hidden text-[deepskyblue] text-[orangered] text-[red] text-[deeppink] text-[cyan] text-[purple] text-[gold] text-[orange] text-[green] text-[blue]"></div>
