@@ -133,7 +133,7 @@ const About = () => {
 
       <motion.div className="flex flex-col-reverse lg:flex-row gap-6 lg:gap-4 w-full items-center">
         <motion.div
-          className="w-full lg:w-1/2 order-1"
+          className="w-full lg:w-2/5 order-1"
           variants={imageVariants}
         >
           <motion.img

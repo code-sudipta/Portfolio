@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import banner from "../assets/banner.svg";
+import me from "../assets/me.png";
 import { motion } from "motion/react";
 
 const Banner = () => {
@@ -265,9 +265,9 @@ const Banner = () => {
         variants={imageVariants}
       >
         <motion.img
-          src={banner}
+          src={me}
           alt="banner"
-          className="w-[80%] h-auto max-h-full cursor-grab active:cursor-grabbing"
+          className="w-[50%] h-auto cursor-grab active:cursor-grabbing rounded-2xl shadow-2xl"
           drag
           dragConstraints={constraintsRef}
           dragElastic={0.1}
