@@ -128,14 +128,14 @@ const Header = () => {
         "theme-link"
       ).href = `https://unpkg.com/primereact@10.9.6/resources/themes/arya-orange/theme.css`;
       document.getElementById("custom-theme").href =
-        "./src/themes/darkTheme.css";
+        "/themes/darkTheme.css";
       localStorage.setItem("theme", "dark");
     } else {
       document.getElementById(
         "theme-link"
       ).href = `https://unpkg.com/primereact@10.9.6/resources/themes/saga-orange/theme.css`;
       document.getElementById("custom-theme").href =
-        "./src/themes/lightTheme.css";
+        "/themes/lightTheme.css";
       localStorage.setItem("theme", "light");
     }
     setDarkTheme(!darkTheme);
@@ -146,7 +146,7 @@ const Header = () => {
       "theme-link"
     ).href = `https://unpkg.com/primereact@10.9.6/resources/themes/arya-orange/theme.css`;
     console.log(document.getElementById("custom-theme"));
-    document.getElementById("custom-theme").href = "./src/themes/darkTheme.css";
+    document.getElementById("custom-theme").href = "/themes/darkTheme.css";
   }
 
   const toggleSidebar = () => {
